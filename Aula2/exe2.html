@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      class Pessoa {
+
+        constructor(nome, sobrenome) {
+            this._nome      = nome;
+            this._sobrenome = sobrenome;
+        }
+
+        obtemNomeCompleto(){
+          return this._nome + " " + this._sobrenome;
+        }
+      }
+
+      (function(){
+        var pessoa = new Pessoa('Fernando', 'Renesto');
+
+        console.log(pessoa.obtemNomeCompleto());
+
+      })()
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

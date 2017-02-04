@@ -4,6 +4,10 @@ var campos = [
   document.querySelector("#valor")
 ];
 
+var negociacao1 = new Negociacao();
+
+console.log(negociacao1);
+
 var tbody = document.querySelector("table tbody");
 
 document.querySelector(".form").addEventListener("submit", function(event){
