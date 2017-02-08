@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+
     <title>Negociações</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -11,7 +12,7 @@
 
     <h1 class="text-center">Negociações</h1>
 
-    <form class="form">
+    <form class="form" onsubmit="negociacaoController.adiciona(event);">
 
         <div class="form-group">
             <label for="data">Data</label>
@@ -59,6 +60,7 @@
         </tfoot>
     </table>
     <script src="app/models/negociacao.class.js"></script>
+    <script src="app/controllers/negociacao.controller.js"></script>
     <script src="app/index.js"></script>
 </body>
 </html>
