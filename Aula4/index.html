@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        //exe1
+        class Codigo{
+            constructor(codigo){
+                if(!this._valida(codigo)) throw new Error(`O texto ${codigo} nao e um codigo valido`);
+                this._codigo = codigo;
+            }
+
+            get texto(){
+                return this._codigo;
+            }
+
+            _valida(expressao){
+                return /\D{3}-\D{2}-\d{2}/.test(expressao);
+            }
+        }
+
+        let codigo1 = new Codigo('GWZ-JJ-12');
+        let codigo2 = new Codigo('1X1-JJ-12');
+
+        console.log(codigo1.texto);
+        console.log(codigo2.texto);
+    </script>
+    <script>
+        //exe2
+        let listaDeNomes1 = ['Flavio','Rogers','Julia'];
+        let listaDeNomes2 = ['Vieira','Fernanda','Gerson'];
+
+        console.log([].concat(listaDeNomes1,listaDeNomes2));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
