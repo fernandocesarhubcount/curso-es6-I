@@ -1,12 +1,4 @@
-class NegociacoesView{
-    
-    constructor(elemento){
-        this._elemento = elemento;
-    }
-
-    update(modelo){
-        this._elemento.innerHTML = this._template(modelo);
-    }
+class NegociacoesView extends View{
 
     _template(modelo){
         

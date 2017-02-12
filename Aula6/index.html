@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Conta{
+            constructor(saldo){
+                this._saldo = saldo;
+            }
+
+            get saldo(){
+                return this._saldo;
+            }
+
+            atualiza(taxa){
+                throw new Error("Voce deve implementar o metodo atualiza()");
+            }
+        }
+
+        class ContaCorrente extends Conta{
+            atualiza(taxa){
+                this._saldo += taxa;
+            }
+        }
+
+        class ContaPoupanca extends Conta{
+            atualiza(){
+                this._saldo += taxa*2;
+            }
+        }
+    </script>
+</body>
+</html>
